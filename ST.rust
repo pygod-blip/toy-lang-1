@@ -1,0 +1,7 @@
+program    -> statement*
+statement  -> expression ';' | assignment | print_statement
+expression -> literal | binary_operation
+literal    -> NUMBER | STRING | BOOLEAN
+binary_operation -> expression '+' expression
+assignment -> 'let' VARIABLE '=' expression
+print_statement -> 'print' '(' expression ')'
